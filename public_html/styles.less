@@ -1,0 +1,49 @@
+@font-face{
+	font-family: myriadPro;
+    src: url(Myriad-Pro-Light.ttf);
+}
+
+@bg: #fff;
+@t: #777;
+@s1: 18px;
+@s2: 12px;
+
+.time-color{
+	color: @t;
+}
+
+.time-font{
+	font-size: @s2;
+}
+
+.time{
+	.time-color;
+	.time-font;
+}
+
+body{
+	font-size: @s1;
+	background-color: @bg;
+	font-family: myriadPro;
+}
+
+.item-img{
+	margin-top:10px;
+}
+
+.affili-img{
+	height:100px;
+	display:block;
+	margin:auto;
+	margin-top:10px;
+	padding:10px;
+}
+
+img{
+	-webkit-filter: grayscale(10%);
+	filter: grayscale(10%);
+}
+
+hr{
+	margin:50px;
+}
