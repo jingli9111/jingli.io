@@ -5,8 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" 
+      type="image/png" 
+      href="img/head.jpg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
 </head>
 <body>
@@ -17,23 +22,29 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron" style="background-image: url(img/bg.png);
     background-repeat: repeat; text-shadow: 2px 2px 5px black;
-    color: white;">
+    color: white; font-familiy: myriadPro">
     <div class="container" style="max-width: 1000px">
         
         <div class="row">
         <div class="col-md-12" style="height:30px;"></div>
-        <div class="col-md-3 col-xs-3">
+
+
+
+        <div class="col-md-3 col-xs-12">
         <img src="img/head.jpg" style="width:100%;" class="img-rounded">
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-6  col-xs-9">
+
+        <div class="col-md-6  col-xs-12">
         <h2>Li Jing 靖礼</h2>
         <p><small>Ph.D. candidate, MIT<br>
-        Office: 8-313<br>
+        Office: 8-313, 77 Massachusetts Ave, Cambridge, MA 02139<br>
         Email: ljing [at] mit.edu<br>
          <a href="https://scholar.google.com/citations?user=VhxDLwcAAAAJ&hl=en">Google Scholar</a>, 
         <a href="https://github.com/jingli9111">Github</a>, <a href="https://www.linkedin.com/in/li-jing-568b3765">Linkedin</a></small></p> 
         </div>
+
+
+
         
         </div>
         <div class="col-md-12" style="height:30px;"></div>
@@ -41,15 +52,17 @@
    	</div>
 </div>
 
-<div class="container" style="max-width: 1000px">
+<div class="container" style="max-width: 1000px; font-familiy: myriadPro;">
         
         <div class="col-md-12">
           <h2>Profile</h2>
             <div class="col-md-12" style="height:20px;"></div>     
 
-        <p>Li Jing is a senior year Ph.D. student in MIT physics department. He works in <a href="http://www.rle.mit.edu/marin/">Marin soljačić</a>'s group. His research interest includes Deep Learning and Applied Physics. <br>
-        Li Jing received B.S. in Physics and B.A. in Economics (Dual Major) from Peking University in 2014. <br>
-        Li Jing won 2010 International Physics Olympiad Gold (IPhO) medal representing China.
+        <p>I am a senior Ph.D. student in MIT physics department. I work in <a href="http://www.rle.mit.edu/marin/">Marin soljačić</a>'s group. <br>
+        My research interests include Deep Learning and Applied Physics. <br>
+        I am currently a co-founder of <a href="http://lightelligence.ai/">Lightelligence</a> which uses light to accelerate AI. <br>
+        I received my B.S. in Physics and B.A. in Economics (Dual Major) from Peking University in 2014. <br>
+        I won 2010 International Physics Olympiad Gold (IPhO) medal representing China.
         </p>
 
 
@@ -61,28 +74,52 @@
 
                
         <div class="col-md-12">
-            <h2>Selected Projects</h2>
+            <h2>Recent Projects</h2>
             <div class="col-md-12" style="height:20px;"></div>
             <div class="row">
             
-
-<div class="col-md-3">
-        <img src="projects/GORU.pdf" style="height:150px" class="img-thumbnail">
-        </img>
+            <div class="col-md-3">
+              <img src="projects/RUM.png" style="height:150px" class="img-thumbnail">
+              </img>
             </div>
             
 
-            <div class="col-md-9"><p>
-          <strong>Gated Orthogonal Recurrent Units: On Learning to Forget</strong></p>
-          <p><u>Li Jing</u>, Çağlar Gülçehre, John Peurifoy, Yichen Shen, Max Tegmark, Marin Soljačić, Yoshua Bengio<br>
-          arxiv: 1706.02761
-          </p>
-          <p>
-          <a href="https://arxiv.org/pdf/1706.02761.pdf">[PDF]</a>
-          <a href="https://github.com/jingli9111/GORU-tensorflow">[Code-Tensorflow]</a>
-          <a href="https://github.com/jingli9111/URNN-PyTorch">[Code-PyTorch]</a>
-          </p>
+            <div class="col-md-9">
+            <p>
+              <strong>Rotational Unit of Memory</strong>
+            </p>
+              <p>Rumen Dangovski*, <u>Li Jing</u>*, Marin Soljačić<br> 
+              arxiv: 1710.09537, ICLR Undereview
+            </p>
+              <p>
+              <a href="https://arxiv.org/pdf/1710.09537.pdf">[PDF]</a>
+              <a href="http://super-ms.mit.edu/rum/">[Website]</a>
+              <a href="https://github.com/jingli9111/RUM">[Code-Tensorflow]</a>
+              </p>
+                </div>
+            <div class="col-md-12" style="height:20px;"></div>
+
+
+
+            <div class="col-md-3">
+              <img src="projects/GORU.png" style="height:150px" class="img-thumbnail">
+              </img>
             </div>
+            
+
+            <div class="col-md-9">
+            <p>
+              <strong>Gated Orthogonal Recurrent Units: On Learning to Forget</strong>
+            </p>
+              <p><u>Li Jing</u>*, Çağlar Gülçehre*, John Peurifoy, Yichen Shen, Max Tegmark, Marin Soljačić, Yoshua Bengio<br> 
+              arxiv: 1706.02761, AAAI Undereview
+            </p>
+              <p>
+              <a href="https://arxiv.org/pdf/1706.02761.pdf">[PDF]</a>
+              <a href="https://github.com/jingli9111/GORU-tensorflow">[Code-Tensorflow]</a>
+              <a href="https://github.com/jingli9111/URNN-PyTorch">[Code-PyTorch]</a>
+              </p>
+                </div>
             <div class="col-md-12" style="height:20px;"></div>
 
             </div>
@@ -98,14 +135,14 @@
             <div class="col-md-9"><p>
           <strong>Tunable Efficient Unitary Neural Networks (EUNN) and their application to RNNs</strong></p>
           <p>
-          <u>Li Jing</u>, Yichen Shen, Tena Dubček, John Peurifoy, Scott Skirlo, Yann LeCun, Max Tegmark, Marin Soljačić<br>
+          <u>Li Jing</u>*, Yichen Shen*, Tena Dubček, John Peurifoy, Scott Skirlo, Yann LeCun, Max Tegmark, Marin Soljačić<br>
 Proceedings of the 34th International Conference on Machine Learning (ICML) <br>
 Sydney, Australia, 2017 
           </p>
           <p>
           <a href="http://proceedings.mlr.press/v70/jing17a/jing17a.pdf">[PDF]</a>
           <a href="projects/EUNN_poster.pdf">[Poster]</a> 
-          <a href="projects/EUNN_talk.pdf">[Talk]</a>
+          <a href="projects/EUNN_talk.pdf">[Slides]</a>
           <a href="https://github.com/jingli9111/EUNN-tensorflow">[Code-Tensorflow]</a>
           <a href="https://github.com/jingli9111/URNN-PyTorch">[Code-PyTorch]</a>
           <a href="https://github.com/iguanaus/EUNN-theano">[Code-Theano]</a>
@@ -113,9 +150,6 @@ Sydney, Australia, 2017
             </div>
           <div class="col-md-12" style="height:30px;"></div>
 
-          <div class="col-md-12">
-          <h4><a href="publication.html">Full Publication List >></a></h4>
-          </div>
 
 
           </div>
@@ -125,13 +159,13 @@ Sydney, Australia, 2017
 
                
         <div class="col-md-12">
-            <h2>Award</h2>
+            <h2>Major Award</h2>
             <div class="col-md-12" style="height:20px;"></div>
             <div class="row">
             <div class="col-md-12">
             <a href="http://ipho2010.hfd.hr">
-            2010 41th International Physics Olympiad (IPhO)
-            </a> Gold Medal
+            41th International Physics Olympiad (IPhO)
+            </a> Gold Medal (2010)
             </div>
 
           </div>
@@ -144,7 +178,10 @@ Sydney, Australia, 2017
             <div class="col-md-12" style="height:20px;"></div>
             <div class="row">
             <div class="col-md-12">
-            I am fortunate to work with these great people: <a href="http://yann.lecun.com">Yann LeCun</a>(NYU, Facebook), <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>(UMontreal), <a href="http://www-etud.iro.umontreal.ca/~gulcehrc/">Çağlar Gülçehre</a>(DeepMind), <a href="http://space.mit.edu/home/tegmark/">Max Tegmark</a>(MIT), <a href="https://sites.google.com/site/yichenshenhomepage/">Yichen Shen</a>(MIT), <a href="https://crcs.seas.harvard.edu/people/jasper-snoek">Jasper Snoek</a>(Harvard, Google).
+            I appreciate these great people leading me to the world of AI: <a href="http://yann.lecun.com">Yann LeCun</a>(NYU, Facebook), <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>(UMontreal), <a href="http://www-etud.iro.umontreal.ca/~gulcehrc/">Çağlar Gülçehre</a>(DeepMind), <a href="http://space.mit.edu/home/tegmark/">Max Tegmark</a>(MIT), <a href="https://sites.google.com/site/yichenshenhomepage/">Yichen Shen</a>(MIT).
+
+            I am also fortunate to work with these talented young people:
+            John Peurifoy(MIT), Rumen Dangovski(MIT), Rawn Henry(MIT), Fidel Cano-Renteria(MIT), <a href="https://vankata.tk/">Ivan Ivanov</a>(American College of Sofia).
 
             </div>
 
@@ -153,7 +190,87 @@ Sydney, Australia, 2017
 
         </div>
 
+
+
+        <div class="col-md-12">
+            <h2>Publications</h2>
+            <div class="col-md-12" style="height:20px;"></div>
+            <div class="row">
+            <div class="col-md-12">
+
+                    <h4> Submitted </h4>    
+
+            <ul>
+
+        <li><strong>Nanophotonic Particle Simulation and Inverse Design
+Using Artificial Neural Networks</strong>
+              <p>RJohn Peurifoy, Yichen Shen, <u>Li Jing</u>, Yi Yang, Fidel Cano-Renteria, Brendan Delacy, Max Tegmark, John D. Joannopoulos, Marin Soljačić<br>
+        Nature Communication under review</p>
+        </li>
+
+
+        <li><strong>Rotational Unit of Memory</strong>
+              <p>Rumen Dangovski, <u>Li Jing</u>, Marin Soljačić<br>
+        ICLR 2018 under review</p>
+        </li>
+
+
+        <li><strong>Gated Orthogonal Recurrent Units: On Learning to Forget</strong>
+              <p><u>Li Jing</u>, Çağlar Gülçehre, John Peurifoy, Yichen Shen, Max Tegmark, Marin Soljačić, Yoshua Bengio<br>
+        AAAI 2018 under review</p>
+        </li>
+        </ul>
+        <h4> Published </h4>    
+        <ul>
+
+        <li><strong>Tunable Efficient Unitary Neural Networks (EUNN) and their application to RNNs</strong>
+              <p><u>Li Jing</u>, Yichen Shen, Tena Dubček, John Peurifoy, Scott Skirlo, Yann LeCun, Max Tegmark, Marin Soljačić<br>
+        ICML 2017</p>
+        </li>
+
+        <li><strong>Quantum cloning machines and the applications</strong></li>
+        <p>Heng Fan, Yi-Nan Wang, <u>Li Jing</u>, Jie-Dong Yue, Han-Duo Shi, Yong-Liang Zhang, Liang-Zhu Mu<br>
+        Physics Reports 544 (3), 241-322 (2014)</p>
+
+
+        <li><strong>Fitting magnetic field gradient with Heisenberg-scaling accuracy</strong></li>
+        <p>Yong-Liang Zhang, Huan Wang, <u>Li Jing</u>, Liang-Zhu Mu, Heng Fan<br>
+        Scientific reports 4, 7390 (2014)</p>
+
+        <li><strong>Quantum network teleportation for quantum information distribution and concentration</strong></li>
+        <p>Yong-Liang Zhang, Yi-Nan Wang, Xiang-Ru Xiao, <u>Li Jing</u>, Liang-Zhu Mu, VE Korepin, Heng Fan<br>
+        Physical Review A 87 (2), 022302 (2013)</p>
+
+        <li><strong>Minimal input sets determining phase-covariant and universal quantum cloning</strong></li>
+        <p><u>Li Jing</u>, Yi-Nan Wang, Han-Duo Shi, Liang-Zhu Mu, Heng Fan<br>
+        Physical Review A 86 (6), 062315 (2012)</p>
+
+        <li><strong>General quantum key distribution in higher dimension</strong></li>
+        <p>Zhao-Xi Xiong, Han-Duo Shi, Yi-Nan Wang, <u>Li Jing</u>, Jin Lei, Liang-Zhu Mu, Heng Fan<br>
+        Physical Review A 85 (1), 012334 (2012)</p>
+
+        <li><strong>Non-compression of quantum phase information</strong></li>
+        <p>Yi-Nan Wang, Han-Duo Shi, <u>Li Jing</u>, Zhao-Xi Xiong, Jin Lei, Liang-Zhu Mu, Heng Fan<br>
+        Journal of Physics A: Mathematical and Theoretical 45 (2), 025304 (2012)</p>
+
+        <li><strong>Unified universal quantum cloning machine and fidelities</strong></li>
+        <p>Yi-Nan Wang, Han-Duo Shi, Zhao-Xi Xiong, <u>Li Jing</u>, Xi-Jun Ren, Liang-Zhu Mu, Heng Fan<br>
+        Physical Review A 84 (3), 034302 (2011)</p>
+            </div>
+                        <div class="col-md-12" style="height:20px;"></div>
+
+            </div>
+            </ul>
+
+
+        </div>
+
 </div>
+
+
+</div>
+
+
 
      
 
