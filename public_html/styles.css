@@ -1,11 +1,9 @@
-@font-face{
-	font-family: myriadPro;
+@font-face {
+    font-family: myriadPro;
     src: url(Myriad-Pro-Light.ttf);
 }
 
-body{
-	font-family: myriadPro;
-	font-size: 14pt;
+body {
+    font-family: myriadPro;
+    font-size: 14pt;
 }
-
-
