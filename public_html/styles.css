@@ -1,9 +1,5 @@
-@font-face {
-    font-family: myriadPro;
-    src: url(Myriad-Pro-Light.ttf);
-}
 
 body {
-    font-family: myriadPro;
+    font-family: 'Roboto', sans-serif;
     font-size: 14pt;
 }
