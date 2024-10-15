@@ -1,111 +1,70 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Li Jing | OpenAI</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Li Jing - OpenAI</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap">
+  <style>
+    body {
+      background-color: var(--bg-color); 
+      color: var(--text-color);
+      font-family: 'Newsreader', serif;
+      line-height: 1.6;
+      margin: 2em;
+      max-width: 500px; 
+      margin-left: auto;
+      margin-right: auto; 
+      font-size: 18px;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        color: black; 
+        text-decoration: underline; 
+    }
+
+    :root {
+      --bg-color: #f0efea; 
+      --text-color: #141413;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      margin-bottom: 1em;
+      text-align: left; /* Align paragraph text to the left */
+    }
+
+    .links { /* Style the links section */
+      margin-top: 2em; 
+    }
+
+    .links a {
+      display: block; /* Make links stack vertically */
+      margin-bottom: 0.5em;
+    }
+
+    .email { /* Style the email address */
+      font-family: monospace; /* Use a monospace font */
+      font-size: 0.9em;     /* Slightly reduce the font size */
+    }
+  </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container" style="max-width: 1200px">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><big>Li J</big>ING</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+  <h1>Li Jing</h1>
 
-    <div class="jumbotron" style="background-color:white">
-        <div class="container" style="max-width: 1200px">
-            <div class="row">
-                <div class="col-md-12" style="height:30px;"></div>
-                <div class="col-md-3 col-xs-12">
-                    <img src="img/head.jpg" style="width:100%;" class="rounded-circle">
-                </div>
-                <div class="col-md-9  col-xs-12">
-                    <br>
-                    <h4><strong>
-                    Researcher at OpenAI</strong></h4>
-                    <br>
-                    <p>San Francisco Bay Area</p>
-                    <p><strong>Email</strong>: <span style="font-family: monospace">lijing[at]openai(dot)com </span></p>
-                    <p>
-                        <a href="https://scholar.google.com/citations?user=VhxDLwcAAAAJ">Google Scholar</a>
-                        <a style="margin-left:30px" href="https://www.linkedin.com/in/li-jing-568b3765/">LinkedIn</a>
-                        <a style="margin-left:30px" href="https://twitter.com/jingli9111">Twitter</a>
-                    </p>
-                </div>
+  <p>I am a researcher at <a href="https://openai.com">OpenAI</a>, mainly focusing on multimodality. I am interested in building real world AGI.</p>
 
+  <p>I am a co-creator of <a href="https://openai.com/dall-e-3">DALL-E 3</a> and <a href="https://openai.com/sora">Sora</a>, and a core contributor to <a href="https://openai.com/index/hello-gpt-4o/">GPT-4o</a>. Previously, I earned my PhD in physics from MIT and did a postdoc at FAIR under the supervision of Yann LeCun.</p>
 
+  <div class="links"> 
+    <a href="https://scholar.google.com/citations?user=VhxDLwcAAAAJ">Google Scholar</a>
+    <a href="https://twitter.com/jingli9111">Twitter</a>
+  </div>
 
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container" style="max-width: 1200px">
-        <div class="row">
-            <div class="col-md-12" style="height:30px;" id="bio"></div>
-            <div class="col-md-12">
-                <p>
-                    I am a researcher at <a href="https://openai.com/">OpenAI</a>.
-                    I co-created <a href="https://openai.com/dall-e-3">DALL&#183E 3</a> and <a href="https://openai.com/sora">Sora</a>.
-                    I am enthusiastic about helping AI understand the real world and create new intelligence.
-                </p>
-            </div>
-
-
-            <div class="col-md-12" style="height:60px;">
-                <hr>
-            </div>
-            <div class="col-md-1">
-                <a href="https://openai.com/">
-                <img src="img/openai-logo.png" style="width:100%;">
-                </a>
-            </div>
-            <div class="col-md-1">
-                <a href="https://ai.facebook.com/">
-                <img src="img/meta-logo.png" style="width:100%; vertical-align: middle;">
-                </a>
-            </div>
-            <div class="col-md-1">
-                <a href="https://physics.mit.edu/">
-                <img src="img/mit-logo.png" style="width:100%;">
-                </a>
-            </div>
-            <div class="col-md-1">
-                <a href="https://www.lightelligence.ai/">
-                <img src="img/lightelligence-logo.png" style="width:100%;">
-                </a>
-            </div>
-            <div class="col-md-1">
-                <a href="https://en.wikipedia.org/wiki/Peking_University">
-                <img src="img/pku-logo.png" style="width:100%;">
-                </a>
-            </div>
-
-            <div class="col-md-12 col-xs-12" style="height:60px"></div>
-        </div>
-
-    </div>
+  <p >Reach out to me at <span class="email">jingli9111 at gmail dot com</span></p>
 
 </body>
-
 </html>
