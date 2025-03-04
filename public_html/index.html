@@ -3,22 +3,22 @@
 <head>
   <title>Li Jing - OpenAI</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       background-color: var(--bg-color); 
       color: var(--text-color);
       font-family: 'Newsreader', serif;
       line-height: 1.6;
-      margin: 2em;
-      max-width: 500px; 
-      margin-left: auto;
-      margin-right: auto; 
+      margin: 2em auto;
+      max-width: 500px;
       font-size: 18px;
+      padding: 0 1em;
     }
 
     a:link, a:visited, a:hover, a:active {
-        color: black; 
-        text-decoration: underline; 
+      color: black; 
+      text-decoration: underline; 
     }
 
     :root {
@@ -33,21 +33,40 @@
 
     p {
       margin-bottom: 1em;
-      text-align: left; /* Align paragraph text to the left */
+      text-align: left;
     }
 
-    .links { /* Style the links section */
+    .links {
       margin-top: 2em; 
     }
 
     .links a {
-      display: block; /* Make links stack vertically */
+      display: block;
       margin-bottom: 0.5em;
     }
 
-    .email { /* Style the email address */
-      font-family: monospace; /* Use a monospace font */
-      font-size: 0.9em;     /* Slightly reduce the font size */
+    .email {
+      font-family: monospace;
+      font-size: 0.9em;
+      background: linear-gradient(-45deg, #141413, #6b6b69, #141413, #6b6b69);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientAnimation 4s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 1em 0;
+        padding: 0 0.5em;
+        max-width: none;
+      }
     }
   </style>
 </head>
@@ -55,20 +74,18 @@
 
   <h1>Li Jing</h1>
 
-  <p>I am a researcher at <a href="https://openai.com">OpenAI</a>, working on multimodality. <br> I am interested in building real world AGI.</p>
+  <p>I am a researcher at <a href="https://openai.com">OpenAI</a>, working on multimodality.<br> I am interested in building real world AGI.</p>
 
   <p>I worked on <a href="https://openai.com/dall-e-3">DALL-E 3</a>, <a href="https://openai.com/sora">Sora</a>, <a href="https://openai.com/index/hello-gpt-4o/">GPT-4o</a> and <a href="https://openai.com/index/introducing-gpt-4-5/">GPT-4.5</a>.</p>
     
-  
-  <p>Previously, I earned my PhD in physics from MIT. </p>
-  <!-- Previously, I was honored <a href="https://www.innovatorsunder35.com/the-list/li-jing/">TR35</a>, <a href="https://www.forbeschina.com/lists/1725">Forbes 30u30</a>, and have won <a href="https://ipho-unofficial.org/timeline/2010/individual">IPhO</a>. </p> -->
+  <p>Previously, I earned my PhD in physics from MIT.</p>
 
   <div class="links"> 
     <a href="https://scholar.google.com/citations?user=VhxDLwcAAAAJ">Google Scholar</a>
     <a href="https://twitter.com/jingli9111">Twitter</a>
   </div>
 
-  <p >Reach out to me at <span class="email">_@jingli.io</span></p>
+  <p>Reach out to me at <span class="email">_@jingli.io</span></p>
 
 </body>
 </html>
