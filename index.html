@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Li Jing</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg-color: #f0efea;
+      --text-color: #141413;
+      --link-color: #141413;
+      --border-color: #d4d3ce;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Newsreader', serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 3rem 2rem;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .container {
+      max-width: 680px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-color);
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    .work a {
+      font-style: italic;
+    }
+
+    .footer {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .contact {
+      margin-bottom: 1.25rem;
+    }
+
+    .email {
+      font-family: monospace;
+      font-size: 0.95rem;
+      color: #2b2b2b;
+      cursor: pointer;
+      background: rgba(0,0,0,0.04);
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      transition: background 0.2s ease;
+      position: relative;
+    }
+
+    .email:hover {
+      background: rgba(0,0,0,0.08);
+    }
+
+    .email.copied::after {
+      content: 'Copied!';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -1.5rem;
+      font-size: 0.75rem;
+      color: #555;
+      font-family: 'Newsreader', serif;
+      white-space: nowrap;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      align-items: center;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+      padding: 0.25rem 0;
+    }
+
+    .links a:hover {
+      opacity: 0.7;
+    }
+
+    .links a svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 2rem 1.25rem;
+      }
+
+      h1 {
+        font-size: 1.875rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+
+      .footer {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+      }
+
+      .links {
+        gap: 0.6rem 1.25rem;
+      }
+
+      .links a {
+        font-size: 0.95rem;
+        padding: 0.35rem 0;
+      }
+
+      .links a svg {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Li Jing</h1>
+
+    <p>Co-founder of something new.</p>
+
+    <p>I was a research lead at <a href="https://openai.com">OpenAI</a>, where I led a team on video perception. I was a core contributor to several of OpenAI's flagship models:
+      <a href="https://openai.com/dall-e-3">DALL-E 3</a>,
+      <a href="https://openai.com/index/sora/">Sora 1</a>,
+      <a href="https://openai.com/index/hello-gpt-4o/">GPT-4o</a>,
+      <a href="https://openai.com/index/thinking-with-images/">Thinking with Images</a>,
+      <a href="https://openai.com/index/introducing-4o-image-generation/">4o Image Generation</a>, and
+      <a href="https://openai.com/index/introducing-gpt-5/">GPT-5</a>.
+    </p>
+
+    <p>Before OpenAI, I worked at <a href="https://ai.meta.com/research/">FAIR</a> with <a href="https://yann.lecun.com/">Yann LeCun</a> and earned my PhD in <a href="https://marin-rle.mit.edu/">physics</a> from MIT. I've been recognized as <a href="https://www.innovatorsunder35.com/the-list/li-jing/">TR35</a>, <a href="https://www.forbeschina.com/lists/1725">Forbes 30 Under 30</a>, and won a Gold Medal at <a href="https://ipho-unofficial.org/timeline/2010/individual">IPhO</a>.</p>
+
+    <div class="footer">
+      <p class="contact">Based in the Bay Area. Reach me at <span class="email" onclick="copyEmail(this)" title="Click to copy">hello@jingli.io</span></p>
+
+      <div class="links">
+        <a href="https://scholar.google.com/citations?hl=en&user=VhxDLwcAAAAJ">
+          <svg viewBox="0 0 512 512">
+            <path fill="#4285F4" d="M256 411.12L0 202.667 256 0z"/>
+            <path fill="#356AC3" d="M256 411.12l256-208.453L256 0z"/>
+            <circle fill="#A0C3FF" cx="256" cy="362.667" r="149.333"/>
+            <path fill="#76A7FA" d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"/>
+          </svg>
+          Google Scholar
+        </a>
+        <a href="https://x.com/jingli9111">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          Twitter
+        </a>
+        <a href="https://www.linkedin.com/in/li-jing-568b3765/">
+          <svg viewBox="0 0 24 24" fill="#0A66C2">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyEmail(el) {
+      const email = 'hello@jingli.io';
+      navigator.clipboard.writeText(email).then(function() {
+        el.classList.add('copied');
+        setTimeout(function() {
+          el.classList.remove('copied');
+        }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>
